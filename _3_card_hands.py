@@ -1,15 +1,18 @@
 """
-Deal a hand of 5 cards
+Deal a hand of 5 cards.
 """
-from test_helper import equals
+suits = ['♠︎', '♣︎', '♥︎', '♦︎']
+values = ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K']
 
+# Create deck of cards
+cards = []
 
-def create_card_deck():
-    pass
+assert len(cards) == 52, f"There were {len(cards)} cards in the deck"
 
+# Deal 5 random cards
+hand = []
 
-def deal_cards():
-    pass
+assert len(hand) == 5, f"There were {len(hand)} cards in the hand"
+assert len(cards) == 47, f"There should be 5 fewer cards in the deck after dealing, {len(cards)} != 47"
 
-
-# Write some tests
+print(hand)
